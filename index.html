@@ -1,1 +1,185 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yuyuan Liu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="vender/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/own.css" rel="stylesheet">
+    <link rel="icon"
+          type="image/png"
+          href="img/favicon.ico">
+          <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(52.108996, -106.594534),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                disableDefaultUI: true,
+
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
+                    mapOptions);
+            marker = new google.maps.Marker({
+                map:map,
+                draggable:true,
+                animation: google.maps.Animation.DROP,
+                position: new google.maps.LatLng(52.108996, -106.594534)
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body id="body">
+<div class="page-wrap">
+    <div class="navbar navbar-default mynav navbar-fixed-top" role="navigation">
+        <div class="container mycontainer">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse mycollapse">
+                <ul class="nav navbar-nav navbar-left ">
+                    <li class="item"> <a class="active" href="#body">YUYAUN LIU</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="item"><a class="active" href="#about">ABOUT ME</a></li>
+                    <li class="item"><a href="#work">WORK</a></li>
+                    <li class="item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mypadder"></div>
+    <div class="mypadder"></div>
+
+    <div class="mybanner">
+        <div class="container">
+            <ul id="mybannerinside">
+                <li>I am intrigued by traveling, photographing and coding.</li>
+                <li>I love math and music.</li>
+                <li>I work hard for things that are worth it.</li>
+                <li>And I get things done.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="whitebackground">
+        <div class="container" id="about">
+            <div class="mypadder"></div>
+                <div class="row">
+                    <div class="col-md-1">   
+                    </div>
+                    <div class="col-md-7">
+                        <h1 class="aboutme">About me</h1>
+                        <p class="aboutmecontent">
+                        Hi, I'm Yuyuan!
+                        </p>
+                        <p class="aboutmecontent">
+                            I'm a third year student in USask, alumnus of <a href="http://www.buaa.edu.cn/">BUAA</a>, <a href="http://web.ncku.edu.tw/bin/home.php?Lang=en">NCKU</a> and <a href="https://www.technion.ac.il/en/">TECHNION.</a> With knowledge in a wide range of computer science fields, I built up many interesting projects and apps.
+                            
+                        </p>
+                        <p class="aboutmecontent">
+                           I'm currently actively looking for 4-16 months SDE Intern opportunities begining in May 2018.
+                        </p>
+                        <p class="aboutmecontent">
+                            <a href="#contact">Say hi to me!</a>
+                        </p>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="findme">FIND ME ON</h5>
+                        <hr>
+                        <div class="social">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/yuyuan-liu/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LINKEDIN</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100007442592645"><i class="fa fa-facebook-square" aria-hidden="true"></i> FACEBOOK</a></li>
+                                <li><a href="https://github.com/codeYuyuan"><i class="fa fa-github" aria-hidden="true"></i>  GITHUB </a></li>
+                                <li><a href="https://maricoliu.tuchong.com/"><i class="fa fa-camera-retro" aria-hidden="true"></i> TUCHONG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div class="mypadder"></div>
+        </div>
+
+    </div>
+
+    <div class="container" id="work">
+        <div class="mypadder"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+              <div class="col-md-8">
+                  <h1 class="header">Work</h1>
+                  <hr>
+              </div>
+              <div class="col-md-1"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="whitebackground">
+        <div class="container">
+            <div class="hcpadder"></div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <h1 class="header" id="contact">Contact me</h1>
+                    <br>
+                    <p class="aboutmecontent">
+                        Drop me a line anytime at <a href="mailto:yuyuan.liu@usask.ca">yuyuan.liu@usask.ca</a> to get in touch with me.
+                    </p>
+                    <p class="aboutmecontent">
+                        It would be great if you also happen to be in Saskatoon. In that case we can sit down, have a drink and talk about things face to face.
+                    </p>
+
+                </div>
+                <div class="col-md-4" id="map-canvas-div">
+                     <div id="map-canvas">
+
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="hcpadder"></div>
+        </div>
+    </div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p class="text-muted credit">&copy;2017 by Yuyuan Liu</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+<script src="js/own.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="vender/bootstrap.min.js"></script>
+</body>
+</html>
