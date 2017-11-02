@@ -1,24 +1,7 @@
 $(document).ready(function() {
     $('.navbar').onePageNav();
     var winWidth;
-    function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(52.108996, -106.594534),
-                zoom: 12,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true,
-
-            };
-            var map = new google.maps.Map(document.getElementById("map-canvas"),
-                    mapOptions);
-            marker = new google.maps.Marker({
-                map:map,
-                draggable:true,
-                animation: google.maps.Animation.DROP,
-                position: new google.maps.LatLng(52.108996, -106.594534)
-            });
-        }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    
 
     function methodToFixLayout( e ) {
         winWidth = $(window).width();
