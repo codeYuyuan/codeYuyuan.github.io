@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.navbar').onePageNav();
+    $('.scroll').onePageNav();
     var winWidth;
     
 

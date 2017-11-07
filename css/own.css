@@ -67,6 +67,12 @@
     height: 80%;
 }
 
+.onimagetext{
+    text-align: center;
+}
+.modal-title{
+    text-align: center;
+}
 .modal-dialog {
   width: 90%;
   height: 90%;
